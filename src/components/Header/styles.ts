@@ -5,10 +5,9 @@ export const HeaderContainer = styled.header`
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  background-image: url(${bg});
+  background: url(${bg}) no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
-  padding: 6.4rem 0rem 13.4rem;
+  padding: 6.4rem 0rem 14rem;
 `;
 
 export const HeaderContent = styled.div`

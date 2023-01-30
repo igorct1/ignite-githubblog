@@ -19,9 +19,12 @@ html {
 body {
   font-family: 'Nunito', sans-serif;
   font-size: 1.6rem;
+  -webkit-font-smoothing: antialiased;
 }
 
 :focus {
-  background-color: ${(props) => props.theme["base-blue"]};
+  background: transparent;
+  border: 1px solid ${(props) => props.theme["base-blue"]};
+
 }
 `;

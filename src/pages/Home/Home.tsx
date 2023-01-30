@@ -1,3 +1,10 @@
+import { HomeContainer } from "./style";
+import { UserProfile } from "./UserProfile";
+
 export function Home() {
-  return <h1>home</h1>;
+  return (
+    <HomeContainer>
+      <UserProfile />
+    </HomeContainer>
+  );
 }
