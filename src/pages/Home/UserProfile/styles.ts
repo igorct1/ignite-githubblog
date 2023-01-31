@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 export const UserProfileContainer = styled.div`
   background-color: ${(props) => props.theme["base-profile"]};
   padding: 3.2rem 4rem;
-
+  min-height: 14rem;
   margin-top: -10rem;
 
   border-radius: 10px;

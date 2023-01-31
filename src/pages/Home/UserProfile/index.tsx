@@ -6,6 +6,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { LoadingContainer } from "../../../components/Loading/styles";
 import { api } from "../../../lib";
 import { ProfileDetails, ProfileImage, UserProfileContainer } from "./styles";
 const username = "igorct1";
@@ -39,11 +40,10 @@ export function UserProfile() {
   React.useEffect(() => {
     getProfileData();
   }, []);
-
   return (
     <UserProfileContainer>
       {isLoading ? (
-        ""
+        <LoadingContainer />
       ) : (
         <>
           <ProfileImage src={profileData.avatar_url} />

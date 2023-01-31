@@ -20,6 +20,8 @@ body {
   font-family: 'Nunito', sans-serif;
   font-size: 1.6rem;
   -webkit-font-smoothing: antialiased;
+  height: 100vh;
+  background: ${(props) => props.theme["base-background"]};
 }
 
 :focus {
