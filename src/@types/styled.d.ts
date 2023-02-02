@@ -1,5 +1,4 @@
 // arquivo de definição de tipos (tipagem)
-
 import "styled-components";
 import { defaultTheme } from "../styles/themes/default";
 

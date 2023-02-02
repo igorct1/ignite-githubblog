@@ -7,7 +7,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { LoadingContainer } from "../../../components/Loading/styles";
-import { api } from "../../../lib";
+import { api } from "../../../libs/axios";
 import { ProfileDetails, ProfileImage, UserProfileContainer } from "./styles";
 const username = "igorct1";
 

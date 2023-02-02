@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export const PostContainer = styled(Link)`
   width: 100%;
   text-decoration: none;
-  height: 260px;
+  min-height: 260px;
 
   background: ${(props) => props.theme["base-post"]};
   padding: 3.2rem;
@@ -29,18 +29,21 @@ export const PostContainer = styled(Link)`
 
 export const PostTitleContainer = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-
-  span {
-    color: ${(props) => props.theme["base-span"]};
-    font-size: 1.4rem;
-    font-weight: 400;
-  }
+  gap: 1.6rem;
 
   h1 {
     font-size: 2rem;
     font-weight: 700;
     color: ${(props) => props.theme["base-title"]};
+    max-width: 24rem;
+    line-height: 160%;
+  }
+  span {
+    color: ${(props) => props.theme["base-span"]};
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 0.6rem;
   }
 `;

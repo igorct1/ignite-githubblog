@@ -7,6 +7,6 @@ export const HomeContainer = styled.main`
 export const PostsContainer = styled.div`
   margin-top: 4.8rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
   gap: 3.2rem;
 `;
